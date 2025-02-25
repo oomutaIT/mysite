@@ -54,6 +54,7 @@
   // 優先質問の合計得点
   const priorityScores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   const top3_priorityScores = [];
+  const exTop3_priorityScores = [];
 
   let maxScoreIndex = 999;
 
@@ -141,7 +142,7 @@
     console.log(top3_priorityScores);
 
 
-    scores.fill(0);
+    // scores.fill(0);
   });
 
   // ---fix---
