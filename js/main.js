@@ -125,13 +125,13 @@
     if (exTop3_scores.length === 0) {
       for (let i = 0; i < 3; i++) {
         displayFields[i].textContent = top3_Fields[i].name;
-        displayLink[i].href = url + top3_Fields[i].urlNumber;
+        displayLink[i].href = baseURL + top3_Fields[i].urlNumber;
       }
     }
     else {
       for (let i = 0; i < 3; i++) {
         displayFields[i].textContent = exTop3_Fields[i].name;
-        displayLink[i].href = url + exTop3_Fields[i].urlNumber;
+        displayLink[i].href = baseURL + exTop3_Fields[i].urlNumber;
       }
     }
 
