@@ -1,0 +1,16 @@
+label {
+    margin-left: 16px;
+}
+
+.subject {
+    display: inline-block;
+}
+
+.subject img {
+    display: block;
+    margin-left: 28px;
+}
+
+.hidden {
+    display: none;
+}

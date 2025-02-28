@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職業訓練＜適性分野診断＞</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <section id="Question_s">
+
+        <div>
+            <h2> Q1 身体を動かすことが好きである</h2>
+            <label><input type="radio" name="Q1" checked>はい</label>
+            <label><input type="radio" name="Q1">いいえ</label>
+        </div>
+        <div>
+            <h2> Q2 書類を作ることが好きである</h2>
+            <label><input type="radio" name="Q2" checked>はい</label>
+            <label><input type="radio" name="Q2">いいえ</label>
+        </div>
+        <div>
+            <h2> Q3 屋内で作業することが好きである</h2>
+            <label><input type="radio" name="Q3" checked>はい</label>
+            <label><input type="radio" name="Q3">いいえ</label>
+        </div>
+        <div>
+            <h2> Q4 計算したりデータを扱うことが好きである</h2>
+            <label><input type="radio" name="Q4" checked>はい</label>
+            <label><input type="radio" name="Q4">いいえ</label>
+        </div>
+        <div>
+            <h2> Q5 ものをつくることが好きである</h2>
+            <label><input type="radio" name="Q5" checked>はい</label>
+            <label><input type="radio" name="Q5">いいえ</label>
+        </div>
+        <div>
+            <h2> Q6 人と接することが好きである</h2>
+            <label><input type="radio" name="Q6" checked>はい</label>
+            <label><input type="radio" name="Q6">いいえ</label>
+        </div>
+        <div>
+            <h2> Q7 コンピューターを操作することが好きである</h2>
+            <label><input type="radio" name="Q7" checked>はい</label>
+            <label><input type="radio" name="Q7">いいえ</label>
+        </div>
+        <div>
+            <h2> Q8 ものを修理することが好きである</h2>
+            <label><input type="radio" name="Q8" checked>はい</label>
+            <label><input type="radio" name="Q8">いいえ</label>
+        </div>
+        <div>
+            <h2> Q9 屋外で作業することが好きである</h2>
+            <label><input type="radio" name="Q9" checked>はい</label>
+            <label><input type="radio" name="Q9">いいえ</label>
+        </div>
+        <div>
+            <h2> Q10 デザインすることが好きである</h2>
+            <label><input type="radio" name="Q10" checked>はい</label>
+            <label><input type="radio" name="Q10">いいえ</label>
+        </div>
+        <div>
+            <h2> Q11 建物を見ることが好きである</h2>
+            <label><input type="radio" name="Q11" checked>はい</label>
+            <label><input type="radio" name="Q11">いいえ</label>
+        </div>
+        <div>
+            <h2> Q12 細かい作業をすることが好きである</h2>
+            <label><input type="radio" name="Q12" checked>はい</label>
+            <label><input type="radio" name="Q12">いいえ</label>
+        </div>
+
+        <br>
+        <button type="button" onclick="Result()">結果を表示</button>
+
+    </section>
+
+    <section id="Result" class="hidden">
+
+        <h1>あなたに向いている分野は...</h1>
+
+        <h2>１位</h2>
+        <a href="https://www.fukuoka-kunren.ac.jp" id="Rank1" class="subject" target="_blank">
+            <img id="Rank1_img" width="200" src="" alt="">
+        </a>
+        <br />
+
+        <h2>２位</h2>
+        <a href="https://www.fukuoka-kunren.ac.jp" id="Rank2" class="subject" target="_blank">
+            <img id="Rank2_img" width="200" src="" alt="">
+        </a>
+        <br />
+
+        <h2>３位</h2>
+        <a href="https://www.fukuoka-kunren.ac.jp" id="Rank3" class="subject" target="_blank">
+            <img id="Rank3_img" width="200" src="" alt="">
+        </a>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
