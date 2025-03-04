@@ -1,0 +1,85 @@
+body {
+  user-select: none;
+}
+
+.question {
+  margin: 16px auto;
+  width: 380px;
+}
+
+label {
+  background: lightblue;
+  padding: 8px 8px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+label:hover {
+  background: skyblue;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+#button {
+  user-select: none;
+  background: lightgreen;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  color: rgb(0, 70, 0);
+  padding: 10px 0 0;
+  border: 2px green solid;
+  border-radius: 12.5%;
+  cursor: pointer;
+}
+
+#button:hover {
+  opacity: .6;
+}
+
+#link {
+  margin: 0 auto;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  background: palevioletred;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  border: 2px brown solid;
+  border-radius: 16px;
+  display: block;
+}
+
+a:hover {
+  background: darkred;
+}
+
+.none {
+  display: none;
+}
+
+#text {
+  text-align: center;
+  font-size: 26px;
+}
+
+#reload {
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+}
+
+#reload:hover {
+  text-decoration: underline;
+  color: blue;
+}
