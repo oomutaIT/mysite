@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <h1>適正分野診断</h1><br>
+  <p>自分に当てはまると思うものを選んでください</p>
+  <div id="que">
+
+    <input type="checkbox" id="check1"><label for="check1">Q1 体を動かすことが好きである。<br></label>
+    <input type="checkbox" id="check2"><label for="check2">Q2 書類を作ることが好きである<br></label>
+    <input type="checkbox" id="check3"><label for="check3">Q3 屋内で作業するのが好きである<br></label>
+    <input type="checkbox" id="check4"><label for="check4">Q4 計算したりデータを扱うことができる<br></label>
+    <input type="checkbox" id="check5"><label for="check5">Q5 ものを作ったりするのが好きである<br></label>
+    <input type="checkbox" id="check6"><label for="check6">Q6 人と接するのが好きである<br></label>
+    <input type="checkbox" id="check7"><label for="check7">Q7 コンピュータを操作するのが好きである<br></label>
+    <input type="checkbox" id="check8"><label for="check8">Q8 ものを修理するのが好きである<br></label>
+    <input type="checkbox" id="check9"><label for="check9">Q9 屋外での作業が好きである<br></label>
+    <input type="checkbox" id="check10"><label for="check10">Q10 デザインすることが好きである<br></label>
+    <input type="checkbox" id="check12"><label for="check12">Q11 建物を見るのが好きである<br></label>
+    <input type="checkbox" id="check13"><label for="check13">Q12 細かい作業をするのが好きである<br></label>
+  </div>
+
+  <div id="diad">
+    <input type="button" value="診断" onclick="checkTest()">
+    <input type="button" id="relode" value="リセット/再診断" onclick="window.location.reload();" />
+  </div>
+  <div id="result">
+    <p>おすすめ分野：</p>
+    <p id="recom"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

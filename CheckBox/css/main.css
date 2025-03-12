@@ -1,0 +1,51 @@
+body {
+  background-color: #e5ffd6;
+  margin: 0 auto;
+  width: 600px;
+}
+
+h1 {
+  color: #4d5548;
+  margin-bottom: 0;
+}
+
+
+#que {
+  background-color: #f7fff2;
+  padding: 15px;
+  border-radius: 15px;
+
+}
+
+#diad input {
+  margin: 20px;
+  background-color: #f7fff2;
+  border: solid 1px #4d5548;
+  padding: 5px;
+  border-radius: 5px;
+  color: #343b30;
+}
+
+#diad input:hover {
+  background-color: #abf182a6;
+}
+
+#result {
+  background-color: #f7fff2;
+  padding: 7px;
+  border-radius: 15px;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 3px;
+  color: rgb(92, 126, 87);
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  background-color: #abf182a6;
+}
