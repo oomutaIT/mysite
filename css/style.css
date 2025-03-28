@@ -1,0 +1,138 @@
+/* ------ common ------  */
+
+body {
+  /* font-family: monospace, sans-serif; */
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+section {
+  padding: 16px;
+}
+
+li {
+  text-align: left;
+  margin-top: 12px;
+  padding: 12px;
+  border: 2px solid rgb(10, 122, 190);
+  background-color: whitesmoke;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+li:hover {
+  opacity: .7;
+}
+
+.hide {
+  display: none;
+}
+
+/* ------ section.ques ------  */
+header h1 {
+  letter-spacing: .3rem;
+}
+
+
+
+/* ------ section.ques ------  */
+
+.ques ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ques li.selected {
+  color: #fff;
+  border: 2px solid rgb(10, 122, 190);
+  background: rgb(10, 122, 190);
+}
+
+#btn {
+  width: 160px;
+  padding: 16px 32px;
+  margin: 64px auto;
+  border: 2px solid gray;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  border: 1px solid rgb(10, 122, 190);
+  font-weight: bold;
+  letter-spacing: 2px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#btn:hover {
+  color: #fff;
+  background: rgb(10, 122, 190);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#btn:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: light 0.5s 0s linear;
+}
+
+#btn::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes light {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+
+/* ------ section.result ------  */
+article {
+  margin-bottom: 32px;
+}
+
+.result a {
+  text-decoration: none;
+}
+
+.result img {
+  width: 300px;
+}
