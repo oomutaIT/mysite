@@ -62,34 +62,39 @@ header h1 {
   margin: 64px auto;
   border: 2px solid gray;
   border-radius: 8px;
-  background-color: whitesmoke;
   cursor: pointer;
   user-select: none;
   position: relative;
-  border: 1px solid rgb(10, 122, 190);
   font-weight: bold;
   letter-spacing: 2px;
   overflow: hidden;
+  background-color: darkgray;
+}
+
+#btn.active {
+  background-color: whitesmoke;
+  border: 1px solid rgb(10, 122, 190);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-#btn:hover {
+#btn.active:hover {
   color: #fff;
+  border: 2px solid rgb(10, 122, 190);
   background: rgb(10, 122, 190);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
-#btn:hover::before {
+#btn.active:hover::before {
   -webkit-animation: sh02 0.5s 0s linear;
   -moz-animation: sh02 0.5s 0s linear;
   animation: light 0.5s 0s linear;
 }
 
-#btn::before {
+#btn.active::before {
   content: '';
   display: block;
   width: 0px;
