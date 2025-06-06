@@ -51,7 +51,12 @@
 
   // 表示する分野は３つのみ
   const maxDisplayNum = 3;
+  // 選択済みの個数
+  let selectedNum = 0;  // 0 の時は診断を押せない
 
+
+  const questions_Li = document.querySelectorAll('.ques li');
+  const btn = document.querySelector('#btn');
 
   /*  ------  関数の宣言  ------  */
 
@@ -67,18 +72,29 @@
 
   // 1
   // 選択肢を選んだら.selectを付け外し
-  const questions_Li = document.querySelectorAll('.ques li');
   questions_Li.forEach((li) => {
     li.addEventListener('click', () => {
       li.classList.toggle('selected');
+      if (li.classList.contains('selected')) {
+        selectedNum++;
+        btn.classList.add('active');
+      }
+      else {
+        selectedNum--;
+        if (selectedNum === 0) {
+          btn.classList.remove('active');
+        }
+      }
     });
   });
 
 
   // 診断するが押されたら
-  const btn = document.querySelector('#btn');
   btn.addEventListener('click', () => {
-
+    // 選択肢が１つも押されてなかったら何もしない
+    if (selectedNum === 0) {
+      return;
+    }
 
     // 2
     // スコアを集計
